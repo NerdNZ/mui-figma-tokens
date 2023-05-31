@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Button } from 'antd';
+import Button from '@mui/base/Button';
+import './tokens.css';
 import './App.css';
 
 function App() {
   return (
       <div className="App">
-        <Button type="primary">Button</Button>
+       <Button>Click Me</Button>
       </div>
   );
 }
