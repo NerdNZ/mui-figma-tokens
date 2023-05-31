@@ -1,12 +1,11 @@
 import * as React from 'react';
-import Button from '@mui/base/Button';
-import './tokens.css';
+import MainButton from './components/Button'
 import './App.css';
 
 function App() {
   return (
       <div className="App">
-       <Button>Click Me</Button>
+       <MainButton />
       </div>
   );
 }
