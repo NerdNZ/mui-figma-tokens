@@ -6,3 +6,50 @@
     padding: var(--global-p-12) var(--global-p-16);
 
 }
+
+/* layout */
+
+.App{
+    display: flex;
+}
+
+.container{
+    padding: 32px;
+    display: flex;
+    row-gap: 32px;
+    flex: 1;
+}
+
+.table{
+    display: flex;
+    row-gap: 32px;
+    padding-top: 16px;
+}
+
+.tabs{
+    width: 100%;
+}
+
+.tabs--buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs--buttons-main{
+    display: flex;
+    column-gap: 24px;
+    flex: 1;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter--button{
+
+}
+
+.filter--search{
+
+}
