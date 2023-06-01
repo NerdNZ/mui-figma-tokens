@@ -1,12 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Wed, 31 May 2023 23:59:06 GMT
+ * Generated on Thu, 01 Jun 2023 05:22:40 GMT
  */
 
 :root,::after,::before {
+  --colours-black: #0D2433;
   --colours-black-500: #4A5B66;
   --colours-white-100: #F6F8FA;
   --colours-purple: #440099;
+  --global-font-size-24: 24px;
+  --global-border-2: 2px;
   --global-font-size-14: 14px;
   --global-font-size-16: 16px;
   --global-border-4: 4px;

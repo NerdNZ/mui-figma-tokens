@@ -54,18 +54,55 @@
     border-radius: var(--global-button-lg);
     font-size: var(--global-s-16);
     padding: var(--global-p-12) var(--global-p-16);
+    border: none;
+}
+
+.mainButton--sm{
+    border-radius: var(--global-button-lg);
+    padding: var(--global-p-8) var(--global-p-8);
+    font-size: var(--global-s-14);
+}
+
+.secondaryButton{
+    background-color: white;
+    color: var(--colours-purple);
+    border-radius: var(--global-button-lg);
+    font-size: var(--global-s-16);
+    padding: var(--global-p-12) var(--global-p-16);
+    border: var(--global-border-2) solid var(--colours-purple)
 }
 
 /* tabs-version-1 */
+.tabs-1{
+    display: flex;
+    align-items: center;
+}
+
 .tabs-1 button{
     color: var(--colours-black-500);
     background: white;
     border: none;
-    color: var(--colours-black-500);
+    padding: var(--global-p-8) var(--global-p-8);
 
 }
 
 .tabs-1 button.Mui-selected{
     border-bottom: var(--global-border-4) solid var(--colours-purple);
     font-weight: var(--global-weight-bold)
+}
+
+/* table filters */
+
+.filter{}
+
+.filter--buttons{
+    display: flex;
+    column-gap: 24px;
+    border-radius: var(--global-weight-bold);
+}
+
+.filter--buttons .mainButton--sm .active{
+    font-weight: var(--global-weight-bold);
+    background-color: var(--colours-purple);
+    color: var(--colours-white-100)
 }

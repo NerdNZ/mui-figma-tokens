@@ -56,7 +56,7 @@ function App() {
         <Tabs defaultValue={1} className="tabs">
           <div className="tabs--buttons">
             <div className="tabs--buttons-main">
-              <Button className="mainButton">Back</Button>
+              <Button className="secondaryButton">Back</Button>
               <TabsList className="tabs-1">
                 <Tab value={1}>Component Configuration</Tab>
                 <Tab value={2}>User Management</Tab>
@@ -74,12 +74,12 @@ function App() {
               <div className="filter">
 
                 <div className="filter--buttons">
-                  <Button className="mainButton">View all</Button>
-                  <Button className="mainButton">Services</Button>
-                  <Button className="mainButton">Attributes</Button>
-                  <Button className="mainButton">Incentives</Button>
-                  <Button className="mainButton">Penalties</Button>
-                  <Button className="mainButton">Charges</Button>
+                  <Button className="mainButton mainButton--sm active">View all</Button>
+                  <Button className="mainButton mainButton--sm">Services</Button>
+                  <Button className="mainButton mainButton--sm">Attributes</Button>
+                  <Button className="mainButton mainButton--sm">Incentives</Button>
+                  <Button className="mainButton mainButton--sm">Penalties</Button>
+                  <Button className="mainButton mainButton--sm">Charges</Button>
                 </div>
 
                 <div className="filter--search">
@@ -94,6 +94,7 @@ function App() {
               <div className="table">
                 <div style={{ height: 400, width: '100%' }}>
                   <DataGrid
+                    size="small"
                     rows={rows}
                     columns={columns}
                     initialState={{
