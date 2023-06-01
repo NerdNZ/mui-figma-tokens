@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import './Button.css';
+import './tokens.css';
 import './App.css';
 import Button from '@mui/base/Button';
 import Tab from '@mui/base/Tab';
@@ -57,7 +57,7 @@ function App() {
           <div className="tabs--buttons">
             <div className="tabs--buttons-main">
               <Button className="mainButton">Back</Button>
-              <TabsList>
+              <TabsList className="tabs-1">
                 <Tab value={1}>Component Configuration</Tab>
                 <Tab value={2}>User Management</Tab>
                 <Tab value={3}>Reporting Settings</Tab>

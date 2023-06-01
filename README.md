@@ -10,7 +10,7 @@ Link them up together to create components and then a page from said components
 
 clone repo
 npm install
-npm run buildtoken
+npm run buildtokens
 npm start
 
 ### issues

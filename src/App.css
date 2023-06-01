@@ -1,12 +1,3 @@
-.mainButton{
-    background-color: var(--colours-purple);
-    color: var(--colours-white-100);
-    border-radius: var(--global-button-lg);
-    font-size: var(--global-s-16);
-    padding: var(--global-p-12) var(--global-p-16);
-
-}
-
 /* layout */
 
 .App{
@@ -52,4 +43,29 @@
 
 .filter--search{
 
+}
+
+/* Components */
+
+/* primary button */
+.mainButton{
+    background-color: var(--colours-purple);
+    color: var(--colours-white-100);
+    border-radius: var(--global-button-lg);
+    font-size: var(--global-s-16);
+    padding: var(--global-p-12) var(--global-p-16);
+
+}
+
+/* tabs-version-1 */
+.tabs-1 button{
+    color: var(--colours-black-500);
+    background: white;
+    border: none;
+    color: var(--colours-black-500)
+}
+
+.tabs-1 button.Mui-selected{
+    border-bottom: var(--global-border-4) solid var(--colours-purple);
+    font-weight: var(--global-weight-bold)
 }
