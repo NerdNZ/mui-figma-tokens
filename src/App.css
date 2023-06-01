@@ -54,7 +54,6 @@
     border-radius: var(--global-button-lg);
     font-size: var(--global-s-16);
     padding: var(--global-p-12) var(--global-p-16);
-
 }
 
 /* tabs-version-1 */
@@ -62,7 +61,8 @@
     color: var(--colours-black-500);
     background: white;
     border: none;
-    color: var(--colours-black-500)
+    color: var(--colours-black-500);
+
 }
 
 .tabs-1 button.Mui-selected{
