@@ -74,18 +74,20 @@ function App() {
               <div className="filter">
 
                 <div className="filter--buttons">
-                  <Button className="mainButton mainButton--sm active">View all</Button>
-                  <Button className="mainButton mainButton--sm">Services</Button>
-                  <Button className="mainButton mainButton--sm">Attributes</Button>
-                  <Button className="mainButton mainButton--sm">Incentives</Button>
-                  <Button className="mainButton mainButton--sm">Penalties</Button>
-                  <Button className="mainButton mainButton--sm">Charges</Button>
+                  <Button className="mainButton active">View all</Button>
+                  <Button className="mainButton">Services</Button>
+                  <Button className="mainButton">Attributes</Button>
+                  <Button className="mainButton">Incentives</Button>
+                  <Button className="mainButton">Penalties</Button>
+                  <Button className="mainButton">Charges</Button>
                 </div>
 
-                <div className="filter--search">
-                  <Input />
-                  {/* icon */}
-                  {/* icon */}
+                <div className="filter--toolbar">
+                  <Input className="search" placeholder="Placeholder..."/>
+                  <div className='filter--toolbar-buttons'>
+                    <div className="icon--placeholder"></div>
+                    <div className="icon--placeholder"></div>
+                  </div>
                 </div>
 
 
