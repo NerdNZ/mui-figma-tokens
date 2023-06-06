@@ -6,10 +6,24 @@ import Tab from '@mui/base/Tab';
 import TabsList from '@mui/base/TabsList';
 import TabPanel from '@mui/base/TabPanel';
 import Tabs from '@mui/base/Tabs';
+import FilterButton from './components/FilterButton'
+import ServicesIcon from './assets/services-icon.svg'
+import AttributesIcon from './assets/attributes-icon.svg'
+import IncentivesIcon from './assets/incentives-icon.svg'
+import PenaltiesIcon from './assets/penalties-icon.svg'
+import ChargesIcon from './assets/charges-icon.svg'
 
 import Input from '@mui/base/Input';
 
 import { DataGrid } from '@mui/x-data-grid';
+
+// import BackButtonIcon from './assets/back-chevron.svg'
+import BackButton from './components/Button';
+
+import FilterIcon from './assets/filter-button.svg'
+import InfoIcon from './assets/info-icon.svg'
+
+
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -52,13 +66,16 @@ function App() {
 
        <div className="container">
 
+       
+
         
         <Tabs defaultValue={1} className="tabs">
           <div className="tabs--buttons">
             <div className="tabs--buttons-main">
-              <Button className="secondaryButton">Back</Button>
+              <BackButton className="secondaryButton" name="back"/>
+              {/* <Button className="secondaryButton">Back</Button> */}
               <TabsList className="tabs-1">
-                <Tab value={1}>Component Configuration</Tab>
+                <Tab label="Story" icon={ <img src={ChargesIcon} alt="charges icon"/>} value={1}>Component Configuration</Tab>
                 <Tab value={2}>User Management</Tab>
                 <Tab value={3}>Reporting Settings</Tab>
               </TabsList>
@@ -74,19 +91,39 @@ function App() {
               <div className="filter">
 
                 <div className="filter--buttons">
-                  <Button className="mainButton active">View all</Button>
-                  <Button className="mainButton">Services</Button>
-                  <Button className="mainButton">Attributes</Button>
-                  <Button className="mainButton">Incentives</Button>
-                  <Button className="mainButton">Penalties</Button>
-                  <Button className="mainButton">Charges</Button>
+                  <FilterButton
+                    title="View all" 
+                    active={true}/>
+                  <FilterButton 
+                    imageUrl={ServicesIcon}
+                    title="Services"
+                    front={true}/>
+                  <FilterButton 
+                    imageUrl={AttributesIcon} 
+                    title="Attributes" 
+                    front={true}/>
+                  <FilterButton 
+                    imageUrl={IncentivesIcon} 
+                    title="Incentives"
+                    front={true}/>
+                  <FilterButton 
+                    imageUrl={PenaltiesIcon}
+                    title="Penalties" 
+                    front={true}/>
+                  <FilterButton 
+                    imageUrl={ChargesIcon} 
+                    title="Charges"
+                    front={true} />
                 </div>
-
                 <div className="filter--toolbar">
                   <Input className="search" placeholder="Placeholder..."/>
                   <div className='filter--toolbar-buttons'>
-                    <div className="icon--placeholder"></div>
-                    <div className="icon--placeholder"></div>
+                    <div className="icon--placeholder">
+                      <img src={InfoIcon} alt="Info" />
+                    </div>
+                    <div className="icon--placeholder">
+                      <img src={FilterIcon} alt="Filter" />
+                    </div>
                   </div>
                 </div>
 

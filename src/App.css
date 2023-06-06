@@ -37,17 +37,21 @@
     justify-content: space-between;
 }
 
-.filter--button{
-
-}
-
-.filter--search{
-
-}
-
 /* Components */
 
 /* primary button */
+.CustomButton{
+    background-color: white;
+    color: var(--colours-purple);
+    border-radius: var(--global-button-lg);
+    font-size: var(--global-font-size-14);
+    padding: var(--global-p-12) var(--global-p-16);
+    border: var(--global-border-2) solid var(--colours-purple);
+    font-weight: 500;
+    display: flex;
+    column-gap: 8px;
+}
+
 .mainButton{
     background-color: var(--colours-purple);
     color: var(--colours-white-100);
@@ -57,6 +61,9 @@
     border: none;
     line-height: 10px;
     font-weight: 500;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
 }
 
 .secondaryButton{
@@ -67,6 +74,10 @@
     padding: var(--global-p-12) var(--global-p-16);
     border: var(--global-border-2) solid var(--colours-purple);
     font-weight: 500;
+    display: flex;
+    column-gap: 8px;
+    text-transform: capitalize;
+    align-items: center;
 }
 
 /* tabs-version-1 */
@@ -78,9 +89,13 @@
 .tabs-1 button{
     color: var(--colours-black-500);
     background: white;
-    border: none;
     padding: var(--global-p-8) var(--global-p-8);
 
+    /* reset border styles */
+    border: none;
+
+    /* same size as active */
+    border-bottom: var(--global-border-4) solid transparent;
 }
 
 .tabs-1 button.Mui-selected{
@@ -99,6 +114,7 @@
     display: flex;
     column-gap: var(--global-p-8);
     flex: 1;
+    align-items: center;
 }
 
 .filter--buttons button{
@@ -106,9 +122,41 @@
     font-size: var(--global-font-size-14);
     background-color: white;
     color: var(--colours-black-500);
-    /* button element has larger line-height, reduce height by removing padding */
-    padding: 0 var(--global-p-8);
+    padding: var(--global-p-8) var(--global-p-8);
+
+    border: none;
+    line-height: 10px;
+    display: flex;
+    /* column-gap: 8px; */
+    align-items: center;
+    width: fit-content
 } 
+
+.filterButton img:first-child{
+    padding-right: 8px;
+}
+
+.filter--buttons button.active{
+    
+}
+
+/* .filterButton.active {
+    border-radius: var(--global-button-sm);
+    font-size: var(--global-font-size-14);
+    background-color: white;
+    color: var(--colours-black-500);
+    padding: var(--global-p-12) var(--global-p-16);
+    border: none;
+    line-height: 10px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+} */
+
+.filterButton img{
+    width: 16px;
+    height: 16px;
+}
 
 .filter--buttons button.active{
     font-weight: var(--global-weight-bold);
@@ -146,5 +194,4 @@
     width: 32px;
     height: 32px;
     border-radius: 4px;
-    background: green;
 }
