@@ -1,9 +1,52 @@
 /**
  * Do not edit directly
- * Generated on Thu, 01 Jun 2023 09:43:13 GMT
+ * Generated on Tue, 06 Jun 2023 02:42:08 GMT
  */
 
 :root,::after,::before {
+  --root-green-1300: #002315;
+  --root-green-1200: #00482C;
+  --root-green-1100: #006D43;
+  --root-green-1000: #00925A;
+  --root-green-900: #00B871;
+  --root-green-800: #00DD88;
+  --root-green-700: #40E6A6;
+  --root-green-600: #60EAB5;
+  --root-green-500: #80EEC4;
+  --root-green-400: #A0F2D3;
+  --root-green-300: #C0F7E2;
+  --root-green-200: #D5FAEC;
+  --root-green-100: #EAFCF5;
+  --root-purple-1400: #1B003D;
+  --root-purple-1300: #29005C;
+  --root-purple-1200: #36007A;
+  --root-purple-1100: #440099;
+  --root-purple-1000: #6A34AE;
+  --root-purple-900: #7A4EED;
+  --root-purple-800: #9068C3;
+  --root-purple-700: #B397D5;
+  --root-purple-600: #D2C1E6;
+  --root-purple-500: #E1D6EF;
+  --root-purple-400: #E6DDF1;
+  --root-purple-300: #F0EAF7;
+  --root-purple-200: #F5F1FA;
+  --root-purple-100: #FAF8FC;
+  --root-black-1600: #001828;
+  --root-black-1500: #041A28;
+  --root-black-1400: #0D2433;
+  --root-black-1300: #152B3A;
+  --root-black-1200: #1E3341;
+  --root-black-1100: #273B49;
+  --root-black-1000: #3F515D;
+  --root-black-900: #697781;
+  --root-black-800: #7E8A92;
+  --root-black-600: #939DA4;
+  --root-black-500: #A8B0B6;
+  --root-black-400: #BDC3C7;
+  --root-black-300: #D2D6D9;
+  --root-black-200: #E7E9EB;
+  --root-black-100: #F6F8FA;
+  --root-white: #FFFFFF;
   --colours-black: #0D2433;
   --colours-black-500: #4A5B66;
   --colours-white-100: #F6F8FA;
