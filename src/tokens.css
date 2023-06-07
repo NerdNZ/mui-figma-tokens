@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 06 Jun 2023 03:48:43 GMT
+ * Generated on Wed, 07 Jun 2023 08:17:19 GMT
  */
 
 :root,::after,::before {
@@ -24,7 +24,7 @@
   --purple-1400: #1B003D;
   --purple-1300: #29005C;
   --purple-1200: #36007A;
-  --purple-1100: #440099;
+  --purple-1100: #006a6f;
   --purple-1000: #6A34AE;
   --purple-900: #7A4EED;
   --purple-800: #9068C3;
@@ -67,7 +67,5 @@
   --button-main: [object Object];
   --s-16: 16px;
   --button-lg: 100px;
-  --black: #0D2433;
-  --white-100: #F6F8FA;
-  --purple: #440099;
+  --main-cta-background-color: #006a6f;
 }

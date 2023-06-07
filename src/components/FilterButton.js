@@ -1,5 +1,4 @@
 import '../tokens.css';
-import './Button.css';
 
 export default function FilterButton({ title, imageUrl, front, back, active }) {
     return (

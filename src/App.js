@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './tokens.css';
 import './App.css';
-import Button from '@mui/base/Button';
+// import Button from '@mui/base/Button';
 import Tab from '@mui/base/Tab';
 import TabsList from '@mui/base/TabsList';
 import TabPanel from '@mui/base/TabPanel';
@@ -18,11 +18,13 @@ import Input from '@mui/base/Input';
 import { DataGrid } from '@mui/x-data-grid';
 
 // import BackButtonIcon from './assets/back-chevron.svg'
-import BackButton from './components/Button';
+import CustomButton from './components/Button';
+// import BackButton from './components/Button';
 
 import FilterIcon from './assets/filter-button.svg'
 import InfoIcon from './assets/info-icon.svg'
-
+import BackChevron from './assets/back-chevron.svg'
+import PlusIcon from './assets/create-new-component.svg'
 
 
 const columns = [
@@ -72,7 +74,7 @@ function App() {
         <Tabs defaultValue={1} className="tabs">
           <div className="tabs--buttons">
             <div className="tabs--buttons-main">
-              <BackButton className="secondaryButton" name="back"/>
+              <CustomButton className="secondaryButton" name="back" front={true} imgUrl={BackChevron}/>
               {/* <Button className="secondaryButton">Back</Button> */}
               <TabsList className="tabs-1">
                 <Tab label="Story" icon={ <img src={ChargesIcon} alt="charges icon"/>} value={1}>Component Configuration</Tab>
@@ -80,7 +82,7 @@ function App() {
                 <Tab value={3}>Reporting Settings</Tab>
               </TabsList>
             </div>
-            <Button className="mainButton">Create new component</Button>
+            <CustomButton className="mainButton" name="Create new component" back={true} imgUrl={PlusIcon} />
           </div>
           <TabPanel value={1}>
 

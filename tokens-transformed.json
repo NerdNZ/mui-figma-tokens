@@ -1,18 +1,6 @@
 {
-  "purple": {
-    "value": "#440099",
-    "type": "color"
-  },
-  "white-100": {
-    "value": "#F6F8FA",
-    "type": "color"
-  },
-  "black--500": {
-    "value": "#4A5B66",
-    "type": "color"
-  },
-  "black": {
-    "value": "#0D2433",
+  "main-cta-background-color": {
+    "value": "#006a6f",
     "type": "color"
   },
   "button--lg": {
@@ -204,7 +192,7 @@
     "type": "color"
   },
   "purple-1100": {
-    "value": "#440099",
+    "value": "#006a6f",
     "type": "color"
   },
   "purple-1200": {

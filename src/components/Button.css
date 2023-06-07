@@ -1,8 +1,0 @@
-.mainButton{
-    background-color: var(--colours-purple);
-    color: var(--colours-white-100);
-    border-radius: var(--global-button-lg);
-    font-size: var(--global-s-16);
-    padding: var(--global-p-12) var(--global-p-16);
-
-}

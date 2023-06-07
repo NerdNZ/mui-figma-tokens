@@ -42,22 +42,22 @@
 /* primary button */
 .CustomButton{
     background-color: white;
-    color: var(--colours-purple);
-    border-radius: var(--global-button-lg);
-    font-size: var(--global-font-size-14);
-    padding: var(--global-p-12) var(--global-p-16);
-    border: var(--global-border-2) solid var(--colours-purple);
+    color: var(--main-cta-background-color);
+    border-radius: var(--button-lg);
+    font-size: var(--font-size-14);
+    padding: var(--p-12) var(-p-16);
+    border: var(--border-2) solid var(--main-cta-background-color);
     font-weight: 500;
     display: flex;
     column-gap: 8px;
 }
 
 .mainButton{
-    background-color: var(--colours-purple);
-    color: var(--colours-white-100);
-    border-radius: var(--global-button-lg);
-    font-size: var(--global-font-size-14);
-    padding: var(--global-p-12) var(--global-p-16);
+    background-color: var(--main-cta-background-color);
+    color: var(--white);
+    border-radius: var(--button-lg);
+    font-size: var(--font-size-14);
+    padding: var(--p-12) var(--p-16);
     border: none;
     line-height: 10px;
     font-weight: 500;
@@ -68,11 +68,11 @@
 
 .secondaryButton{
     background-color: white;
-    color: var(--colours-purple);
-    border-radius: var(--global-button-lg);
-    font-size: var(--global-font-size-14);
-    padding: var(--global-p-12) var(--global-p-16);
-    border: var(--global-border-2) solid var(--colours-purple);
+    color: var(--purple-900);
+    border-radius: var(--button-lg);
+    font-size: var(--font-size-14);
+    padding: var(--p-12) var(--p-16);
+    border: var(--border-2) solid var(--purple-900);
     font-weight: 500;
     display: flex;
     column-gap: 8px;
@@ -89,18 +89,18 @@
 .tabs-1 button{
     color: var(--colours-black-500);
     background: white;
-    padding: var(--global-p-8) var(--global-p-8);
+    padding: var(--p-8) var(--p-8);
 
     /* reset border styles */
     border: none;
 
     /* same size as active */
-    border-bottom: var(--global-border-4) solid transparent;
+    border-bottom: var(--border-4) solid transparent;
 }
 
 .tabs-1 button.Mui-selected{
-    border-bottom: var(--global-border-4) solid var(--colours-purple);
-    font-weight: var(--global-weight-bold)
+    border-bottom: var(--border-4) solid var(--main-cta-background-color);
+    font-weight: var(--weight-bold)
 }
 
 /* table filters */
@@ -112,17 +112,17 @@
 
 .filter--buttons{
     display: flex;
-    column-gap: var(--global-p-8);
+    column-gap: var(--p-8);
     flex: 1;
     align-items: center;
 }
 
 .filter--buttons button{
-    border-radius: var(--global-button-sm);
-    font-size: var(--global-font-size-14);
+    border-radius: var(--button-sm);
+    font-size: var(--font-size-14);
     background-color: white;
     color: var(--colours-black-500);
-    padding: var(--global-p-8) var(--global-p-8);
+    padding: var(--p-8) var(--p-8);
 
     border: none;
     line-height: 10px;
@@ -141,11 +141,11 @@
 }
 
 /* .filterButton.active {
-    border-radius: var(--global-button-sm);
-    font-size: var(--global-font-size-14);
+    border-radius: var(-button-sm);
+    font-size: var(-font-size-14);
     background-color: white;
     color: var(--colours-black-500);
-    padding: var(--global-p-12) var(--global-p-16);
+    padding: var(-p-12) var(-p-16);
     border: none;
     line-height: 10px;
     display: flex;
@@ -159,9 +159,9 @@
 }
 
 .filter--buttons button.active{
-    font-weight: var(--global-weight-bold);
-    background-color: var(--colours-purple);
-    color: var(--colours-white-100)
+    font-weight: var(--weight-bold);
+    background-color: var(--main-cta-background-color);
+    color: var(--white)
 }
 
 .filter--toolbar{
@@ -174,7 +174,7 @@
 
 .filter--toolbar-buttons{
     display: flex;
-    column-gap: var(--global-p-16);
+    column-gap: var(--p-16);
 }
 
 .search{
@@ -183,8 +183,8 @@
 }
 
 .search input{
-    border-radius: var(--global-button-lg);
-    padding: var(--global-p-12) var(--global-p-16);
+    border-radius: var(--button-lg);
+    padding: var(--p-12) var(--p-16);
     box-shadow: inset 0px 3px 14px rgba(32, 0, 112, 0.24);
     flex: 1;
     border: none;

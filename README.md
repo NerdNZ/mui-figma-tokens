@@ -18,4 +18,5 @@ npm start
 If you run into any issues, please make sure you have
 
 - npm on your computer
+- Tokens transformer in the library
 - style dictionary in the library
